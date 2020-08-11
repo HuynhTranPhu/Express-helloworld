@@ -1,0 +1,18 @@
+extends ../layout/common.pug
+block content
+    h2 Users
+    form(action="/users/search", method="GET",class="form-inline")
+        input(type="text", name="q", class="form-control mr-sm-2", placeholder="Search name", aria-label="Search")
+        button( class="btn btn-outline-success my-2 my-sm-0") Search </button>
+
+    table.table
+        tr
+            th Name
+            th Phone
+            th Action
+        each user in users
+            tr
+                td= user.name
+                td= user.phone
+                td
+                    a.btn.btn-light(href='/users/'+ user.id) View 
