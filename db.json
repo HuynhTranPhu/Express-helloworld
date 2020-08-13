@@ -610,5 +610,18 @@
       "image": "https://loremflickr.com/320/240",
       "description": "metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede"
     }
+  ],
+  "sessions": [
+    {
+      "id": "UuQO0ZdgJ",
+      "cart": {
+        "a79e6b13-6632-4eb1-8fe1-69be738914c3": 2,
+        "4d16926c-2746-4880-a372-83ea34226ce9": 1,
+        "b7dcbd87-28df-448a-a502-70029888e9d6": 1
+      }
+    },
+    {
+      "id": "pZ15_IFht"
+    }
   ]
 }

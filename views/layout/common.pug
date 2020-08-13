@@ -4,8 +4,8 @@ html
         link(rel="stylesheet", href="/styles/custom.css")
     body
         nav.navbar.navbar-expand-lg.navbar-light.bg-primary
-            img(src="/images/coderX.png" width="40px",heigth="40px" class="mr-3" )
-            a.navbar-brand(href='/') Home
+            img.mb-2(src="/images/coderX.png" width="40px",heigth="40px" class="mr-3" )
+            a.navbar-brand.mb-2(href='/') Home
             button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #navbarSupportedContent.collapse.navbar-collapse
@@ -22,12 +22,12 @@ html
                         a.nav-link(href='/users/create') New user
                     li.nav-item.dropdown.active
                         a#navbarDropdown.nav-link(href='https://www.facebook.com/phuhuynhtran.99' role='button' aria-haspopup='true' aria-expanded='false')
-                            | About Me
-                        .dropdown-menu(aria-labelledby='navbarDropdown')
-                            a.dropdown-item(href='#') Action
-                            a.dropdown-item(href='#') Another action
-                            .dropdown-divider
-                            a.dropdown-item(href='#') Something else here
+                            | About
+                    li.nav-item.active
+                        a.nav-link(href='#')
+                            | Cart 
+                            span.sr-only (current)
+                    p.mt-2= total 
                 form(action="/users/searchmain", method="GET").form-inline.my-2.my-lg-0
                     input.form-control.mr-sm-2(name="q" type='search' placeholder='Search user' aria-label='Search')
                     button.btn.btn-outline-warning.my-2.my-sm-0(type='submit') Search
